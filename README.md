@@ -4,16 +4,28 @@
 
 Credit risk poses a classification problem that’s inherently imbalanced. This is because healthy loans easily outnumber risky loans. In this application, we’ll use various techniques to train and evaluate models with imbalanced classes. We’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 
+## Steps taken to produce the analysis
 
-## Split the Data into Training and Testing Sets
+    1- Split the Data into Training and Testing Sets
 
-## Create a Logistic Regression Model with the Original Data
+    2- Create a Logistic Regression Model with the Original Data by: 
+        - instantiating the logistic regression model, 
+        - scaling the data, 
+        - fitting the model, and 
+        - predicting the data.
 
-## Predict a Logistic Regression Model with Resampled Training Data
+    3- Predict a Logistic Regression Model with Resampled Training Data by:
+        - instantiating the random oversampler model, 
+        - fit the original training data to the random_oversampler model, 
+        - instantiating the logistic regression model, 
+        - scaling the resampled data, 
+        - fitting the model with the scaled resampled data, and 
+        - predicting the data.
 
-## Write a Credit Risk Analysis Report
 
+## OUTCOME: Credit Risk Analysis Report
 
+Use the `credit_risk_report.md` file to read the report with the outcome of the analysis.
 
 ## Tecnologies required and installation guide:
 
@@ -28,9 +40,8 @@ Credit risk poses a classification problem that’s inherently imbalanced. This 
 
 ## Instructions
 
-Use the `credit_risk_resampling.ipynb` notebook to visualize and analyze the performance of any ETF.
+Use the `credit_risk_resampling.ipynb` notebook to analyze the credit risk classification.
 
-Note that this application requires the use of hvPlot for the visualizations.
 
 ## Contributors
 
